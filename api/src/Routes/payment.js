@@ -8,7 +8,6 @@ router.use(express.json());
 
 router.post("/", (req, res) => {
   const chosenRestaurant = req.body;
-  console.log({ chosenRestaurant });
   let preference = {
     items: [
       {
