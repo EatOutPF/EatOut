@@ -9,7 +9,6 @@ const Room = require("./Models/Room");
 const { ATLAS_URI, PORT } = process.env;
 const mongoose = require("mongoose");
 
-
 mongoose
   .connect(ATLAS_URI, {
     maxPoolSize: 50,
