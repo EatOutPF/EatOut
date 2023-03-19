@@ -18,14 +18,14 @@ router.post("/", async (req, res) => {
   }
 });
 
-// router.get('/', async(req, res) => {
-//     let { name } = req.body;
-//     try {
-//         let resultado = await getMenu(name);
-//         res.status(200).json( "resultado" );
-//       } catch (error) {
-//         res.status(404).json({ error: error.message });
-//       }
-//     });
+router.get('/', async(req, res) => {
+    let { name } = req.body;
+    try {
+        let resultado = await getMenu(name);
+        res.status(200).json( "resultado" );
+      } catch (error) {
+        res.status(404).json({ error: error.message });
+      }
+    });
 
 module.exports = router;
