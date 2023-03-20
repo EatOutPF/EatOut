@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
-// Exportamos una funcion que define el modelo
-// Luego le injectamos la conexion a sequelize.
 
 const restaurantSchema = new Schema({
   name: String,
@@ -34,7 +32,8 @@ const restaurantSchema = new Schema({
   room: [{
     type: Schema.Types.ObjectId,
     ref: 'Room'
-  }]
+  }],
+  active: Boolean,
 
 })
 
