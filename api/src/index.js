@@ -19,11 +19,6 @@ mongoose
     console.error(err.stack);
     process.exit(1);
   });
-//   .then(async (client) => {
-//     server.listeners(PORTDB, () => {
-//       console.log(`lintening on port ${PORT}`);
-//     });
-//   });
 
 module.exports = {
   Restaurant,
